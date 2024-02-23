@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    grid-template-columns:
+      1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "Header       Header       Header          Header"
+      "Experience   Experience   Experience      Languages"
+      "Education    Education    Education       Languages";
+  }
+
+div.box2{
+    --size-padding: 20px;
+    --size-padding-2: 10px;
+    --size-margin: 5px;
+    --size-margin-2: 6px;
+
+    padding-top: var(--size-padding);
+    padding-right: var(--size-padding-2);
+    padding-bottom: var(--size-padding);
+    padding-left: var(--size-padding-2);
+
+    margin-top: var(--size-margin);
+    margin-right: var(--size-margin-2);
+    margin-left: var(--size-margin-2);
+    margin-bottom: var(--size-margin);
+
+    border-left-width: 2.5px;
+    border-left-color: black;
+    border-left-style: outset;
+
+    border-radius: 10px;
+}
+
+#Nom {
+    grid-area: Header;
+    background-color: #7fa998;
+}   
+#Expériences {
+    grid-area: Experience;
+    background-color: #7fa998;
+}
+#Languages {
+    grid-area: Languages;
+    background-color: #7fa998;
+}
+#Education {
+    grid-area: Education;
+    background-color: #7fa998;
+}
